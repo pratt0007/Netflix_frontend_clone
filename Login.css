@@ -1,0 +1,99 @@
+.login{
+    position: relative;
+    height: 100%;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/84526d58-475e-4e6f-9c81-d2d78ddce803/a76c1727-34da-4d80-99a3-69476e78860d/IN-en-20221228-popsignuptwoweeks-perspective_alpha_website_medium.jpg')
+    center no-repeat;
+}
+.login_logo{
+     position: fixed;
+     left: 0;
+     width: 150px;
+     object-fit: contain;
+     padding-left: 20px;
+}
+.login_button{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    
+}
+.login_gradient{
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    background-image: linear-gradient( 
+        to top,
+        rgba(0,0,0,0.8) 0,
+        rgba(0,0,0, 0) 60%,
+        rgba(0,0,0,0.8) 100%
+    );
+}
+.login_body{
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+  
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    left: 0;
+    right: 0;
+}
+.login_body > h1 {
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+.login_body > h2 {
+     font-size: 1.9rem;
+     font-weight: 400;
+     margin-bottom: 30px;
+}
+.login_input > form > input{
+   padding: 10px;
+   outline-width: 0;
+   height: 30px;
+   width: 30%;
+   border: none;
+   max-width: 600px;
+}
+.login_input{
+    margin-top: 20px;
+}
+.login_getstarted{
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .login_input > form > input{
+        display: hidden;
+     }
+     .login_body > h1 {
+        font-size: 1.425rem;
+        margin-bottom: 20px;
+    }
+    .login_body > h2 {
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+   }
+   .login_body > h3 {
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+}
